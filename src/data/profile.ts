@@ -1,5 +1,6 @@
 export const profile = {
-  name: "Jordan Paris",
+  first_name: "Jordan",
+  last_name:"Paris",
   email: "paris.jordan@proton.me",
   phone: "0767730522",
   github:"https://github.com/JordanP974",
