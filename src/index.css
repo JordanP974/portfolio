@@ -1,12 +1,11 @@
 :root{
-    --paper:#F4F4F1;
-    --paper-2:#FBFBF9;
-    --ink:#17181A;
-    --slate:#6E7177;
+    --paper:#0B0B0B;
+    --paper-2:#151515;
+    --ink:#F5F5F5;
+    --slate:#d49e17d3;
     --line:#E2E2DC;
-    --accent:#3540D9;
+    --accent:#D4A017;
     --accent-soft:#E7E8FB;
-    --green:#3FA66A;
     --maxw:1100px;
     --gut:clamp(20px,5vw,56px);
 
@@ -20,7 +19,7 @@
   body{
     background:var(--paper);
     color:var(--ink);
-    font-family:"Hanken Grotesk",system-ui,sans-serif;
+    font-family:var(--sans);
     font-size:17px;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
