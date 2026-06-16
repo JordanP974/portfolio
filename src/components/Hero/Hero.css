@@ -1,5 +1,5 @@
 .hero {
-  padding: clamp(64px, 12vh, 140px) 0 clamp(56px, 9vh, 96px);
+  padding: 2rem 0;
 }
 .hero .eyebrow {
   display: block;

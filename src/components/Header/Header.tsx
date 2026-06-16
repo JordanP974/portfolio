@@ -1,6 +1,8 @@
 import { Moon, Sun } from 'lucide-react';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import logoDark from '../../assets/logo-monogram-dark.svg';
+import logoLight from '../../assets/logo-monogram-light.svg';
 import { profile } from '../../data/profile';
 import type { Theme } from '../../hooks/useTheme';
 import './Header.css';
@@ -14,12 +16,18 @@ interface HeaderProps {
 function Header({ theme, onToggleTheme }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const closeMenu = ()=> setIsOpen(false)
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header className="header">
       <nav className="nav">
         <div className="nav-inner">
           <NavLink to={'/#top'} className={'brand'}>
+            <img
+              src={theme === 'dark' ? logoLight  : logoDark }
+              alt="Jordan Paris monogram"
+              className="logo"
+            />
             {profile.first_name} <span>.</span> {profile.last_name}
           </NavLink>
           <div className={`nav-links${isOpen ? ' open' : ''}`}>

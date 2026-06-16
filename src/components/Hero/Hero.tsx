@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+
 import './Hero.css';
 
 function Hero() {
@@ -15,9 +15,9 @@ function Hero() {
       </p>
 
       <div className="cta-row reveal">
-        <NavLink to={'/#'} className={'btn btn-primary'}>Voir mes projets</NavLink>
-        <NavLink to={'/#'} className={'btn btn-ghost'}>Me Contacter</NavLink>
-        <NavLink to={'/#'} className={'btn btn-ghost'}>Télécharger le CV </NavLink>
+        <a href={'#projets'} className={'btn btn-primary'}>Voir mes projets</a>
+        <a href={'#contact'} className={'btn btn-ghost'}>Me Contacter</a>
+        <a href={'/#'} className={'btn btn-ghost'}>Télécharger le CV </a>
       </div>
       <div className="hero-meta reveal">
         <span>
