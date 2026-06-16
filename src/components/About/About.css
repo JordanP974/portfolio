@@ -16,6 +16,7 @@
   padding: 24px;
   background: var(--paper-2);
   align-self: start;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 .about-aside h3 {
   font-family: 'JetBrains Mono', monospace;
