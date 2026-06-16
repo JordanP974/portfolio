@@ -42,3 +42,59 @@ section {
         outline-offset: 3px;
         border-radius: 4px;
       }
+
+      @media (max-width: 760px) {
+        .nav-links {
+          display: none;
+        }
+        .nav-links.open {
+          display: flex;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+          gap: 0;
+          background: var(--paper);
+          border-bottom: 1px solid var(--line);
+          padding: 8px var(--gut);
+        }
+        .nav-links.open a {
+          padding: 12px 0;
+          font-size: 15px;
+        }
+        .nav-links.open .status {
+          align-self: flex-start;
+          margin: 8px 0;
+        }
+        .nav-toggle {
+          display: inline-flex;
+        }
+        .about-grid,
+        .skills-grid,
+        .timeline {
+          grid-template-columns: 1fr;
+        }
+        .proj {
+          grid-template-columns: 36px 1fr;
+          gap: 0 16px;
+        }
+        .proj-links {
+          grid-column: 2;
+          justify-content: flex-start;
+          margin-top: 14px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+          transition: none;
+        }
+      }

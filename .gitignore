@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 idée-architecture.md
+.vercel
+.env*
